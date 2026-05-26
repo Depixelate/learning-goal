@@ -6,7 +6,7 @@ This document provides the scientific rationale for the goal-setting exercise in
 
 ## SMART Goals
 
-SMART is a framework for strengthening goal quality. It is not a checklist to force every goal through, but a lens for identifying which dimensions of a goal are underdeveloped. Most users arrive with goals that are weak on one or two dimensions. Focus on improving those dimensions. 
+SMART is a framework for strengthening goal quality. It is not a checklist to force every goal through, but a lens for identifying which dimensions of a goal are underdeveloped. Most users arrive with goals that are weak on one or two dimensions. Focus on improving those dimensions.
 
 ### Specific
 
@@ -52,7 +52,7 @@ MCII is a self-regulation strategy that combines two techniques: mental contrast
 
 Positive visualization alone — just imagining success — can actually reduce goal pursuit. It satisfies the motivational need without producing action. Mental contrasting corrects this by pairing the desired future with an honest assessment of present reality and its obstacles. This contrast creates an association between the goal and the effort required, producing stronger commitment in cases where the goal is feasible. It induces people to reframe present reality when encountering an obstacle as an obstacle to their wish fulfillment (e.g., skipping studying to attend a party is no longer conceptualized as a fun activity but as an obstacle to getting a good grade in a course).
 
-Critically, mental contrasting is most effective when the person believes the goal is achievable. When feasibility is low, mental contrasting appropriately leads people to disengage — which is healthy self-regulation, not failure. This is why the SMART goal work in Steps 1-2 of the exercise matters: it ensures the goal is well-formed before the learner invests in contrasting. 
+Critically, mental contrasting is most effective when the person believes the goal is achievable. When feasibility is low, mental contrasting appropriately leads people to disengage — which is healthy self-regulation, not failure. This is why the SMART goal work in Steps 1-2 of the exercise matters: it ensures the goal is well-formed before the learner invests in contrasting.
 
 ### Why implementation intentions work
 
@@ -70,11 +70,11 @@ The if-part should be a specific, recognizable cue — a situation, a feeling, a
 
 ### Boundary conditions on SMART goals
 
-Goal-setting interventions have shown positive effects, including over brief periods (e.g., one week) and in digital and text-based interventions. The MCII exercise is a formal theory with a specified mechanism for why mental contrasting creates expectancy-dependent commitment and cue-response links. However, the SMART goal framework is a practitioner heuristic, not a formal theory. The empirical foundation underneath the SMART goal heuristic argues that specific, difficult goals outperform vague "do your best" goals. Progress monitoring, which is encouraged by the Measurable and Time-bound dimensions, also has robust meta-analytic support, with stronger effects when progress is physically recorded. 
+Goal-setting interventions have shown positive effects, including over brief periods (e.g., one week) and in digital and text-based interventions. The MCII exercise is a formal theory with a specified mechanism for why mental contrasting creates expectancy-dependent commitment and cue-response links. However, the SMART goal framework is a practitioner heuristic, not a formal theory. The empirical foundation underneath the SMART goal heuristic argues that specific, difficult goals outperform vague "do your best" goals. Progress monitoring, which is encouraged by the Measurable and Time-bound dimensions, also has robust meta-analytic support, with stronger effects when progress is physically recorded.
 
-While individual dimensions like progress monitoring have robust support, the SMART acronym as a package can oversimplify a more complex evidence base. Specificity in particular does not always help. A meta-analysis of goal-setting interventions for physical activity found no significant difference between specific and non-specific goals (McEwan et al., 2016), and Pietsch et al. (2024) found SMART goals were no more effective than do-your-best or open goals for creative performance. For complex or novel tasks where exploration and strategy development matter more than hitting a defined target, overly specific goals may actually constrain learning. 
+While individual dimensions like progress monitoring have robust support, the SMART acronym as a package can oversimplify a more complex evidence base. Specificity in particular does not always help. A meta-analysis of goal-setting interventions for physical activity found no significant difference between specific and non-specific goals (McEwan et al., 2016), and Pietsch et al. (2024) found SMART goals were no more effective than do-your-best or open goals for creative performance. For complex or novel tasks where exploration and strategy development matter more than hitting a defined target, overly specific goals may actually constrain learning.
 
-This matters for this exercise because early learning goals can often be exploratory. A developer learning a new language or framework is not necessarily optimizing a known task when they are navigating uncertainty and testing new ideas. This is why the exercise treats SMART as a set of dimensions to consider rather than a checklist to complete, and the facilitator should focus on the 1–2 dimensions that are most underdeveloped in the learner's stated goal rather than mechanically walking through all five. In this Skill, SMART is used to deepen the initial goal but the majority of the exercise should center the MCII. 
+This matters for this exercise because early learning goals can often be exploratory. A developer learning a new language or framework is not necessarily optimizing a known task when they are navigating uncertainty and testing new ideas. This is why the exercise treats SMART as a set of dimensions to consider rather than a checklist to complete, and the facilitator should focus on the 1–2 dimensions that are most underdeveloped in the learner's stated goal rather than mechanically walking through all five. In this Skill, SMART is used to deepen the initial goal but the majority of the exercise should center the MCII.
 
 ---
 
