@@ -1,0 +1,22 @@
+Tue May 26 17:21:15 UTC 2026
+CODEX_HOME=/var/folders/9r/hjl0wsg15vj0xbc6qrtrxs7r0000gn/T/tmp.SxwnuQdqFZ
+== metadata validation ==
+metadata validation passed
+== json parse validation ==
+parsed .agents/plugins/marketplace.json
+parsed .claude-plugin/marketplace.json
+parsed learning-goal/.codex-plugin/plugin.json
+parsed learning-goal/.claude-plugin/plugin.json
+== codex marketplace add ==
+Added marketplace `learning-goal` from /Users/velusamykaruppagounder/Documents/Learning Goal/learning-goal.
+Installed marketplace root: /Users/velusamykaruppagounder/Documents/Learning Goal/learning-goal
+== codex marketplace list ==
+MARKETPLACE    ROOT
+learning-goal  /Users/velusamykaruppagounder/Documents/Learning Goal/learning-goal
+== codex plugin add ==
+Added plugin `learning-goal` from marketplace `learning-goal`.
+Installed plugin root: /private/var/folders/9r/hjl0wsg15vj0xbc6qrtrxs7r0000gn/T/tmp.SxwnuQdqFZ/plugins/cache/learning-goal/learning-goal/1.0.0
+== codex plugin list ==
+Marketplace `learning-goal`
+PLUGIN                       STATUS              VERSION  PATH                                                                             
+learning-goal@learning-goal  installed, enabled  1.0.0    /Users/velusamykaruppagounder/Documents/Learning Goal/learning-goal/learning-goal

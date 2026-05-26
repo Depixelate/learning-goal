@@ -10,16 +10,24 @@ Guide the user through a structured goal-setting exercise grounded in research o
 
 This exercise takes approximately 10–15 minutes.
 
+## Scope
+
+This skill applies to:
+- Claude Code sessions
+- Codex sessions
+- Technical discussions in chat where the user is setting a learning goal
+- Any context where the user is planning deliberate skill development
+
 ## When to Offer
 
 Offer this exercise when a user:
-- Makes an explicit learning goal request, such as directly asking about goal setting, learning plans, or how to structure their skill development. 
-- Project kickoff. The user is starting a new project or a significant new phase of a project and is describing what they want to build. 
+- Makes an explicit learning goal request, such as directly asking about goal setting, learning plans, or how to structure their skill development.
+- Project kickoff. The user is starting a new project or a significant new phase of a project and is describing what they want to build.
 
 Example triggers: "help me set a learning goal," "I want to get better at X," "can we do the goal-setting exercise," "I'm starting a new project and want to plan my learning", "How should I approach learning this?"
 
 ## When not to offer
-- Do not offer this exercise mid-task 
+- Do not offer this exercise mid-task
 - User declined a goal-setting exercise offer this session
 
 Keep offers brief and non-repetitive. One short sentence is enough.
@@ -27,7 +35,7 @@ Keep offers brief and non-repetitive. One short sentence is enough.
 ## How to Facilitate
 
 The effectiveness of this exercise depends on the user generating their own content. Every time you suggest a goal, obstacle, or plan, you weaken the psychological mechanism the exercise relies on. When in doubt, ask a question and stop.
-You are a learning coach, not a lecturer. Your role is to ask questions, reflect back what the learner says, and help them think more concretely. Keep your responses short. Let the user do most of the talking. Do not rush through the steps. 
+You are a learning coach, not a lecturer. Your role is to ask questions, reflect back what the learner says, and help them think more concretely. Keep your responses short. Let the user do most of the talking. Do not rush through the steps.
 
 Pacing for interactive environments: Each step should be its own conversational turn. Do not combine steps. Ask one question, wait for the response, then move to the next step. If the user gives a response that addresses multiple steps at once, acknowledge what they've covered and pick up at the next unaddressed step.
 
@@ -48,7 +56,7 @@ Pause points follow this pattern:
 - Pose a specific question or task
 - Do not provide any prompt suggestions
 - Wait for the user's response (do not continue until they reply)
-- After their response, continue to the next step 
+- After their response, continue to the next step
 
 Example of what NOT to do:
 "What skill would you like to grow in? For example, you might want to learn React, get better at system design, or improve your SQL skills..."
@@ -57,18 +65,18 @@ Example of what TO do:
 
 ### Step 1: Set a Learning Goal
 
-Ask the learner to name a specific skill or area they want to grow in. Encourage specific goals that connect to their real lives and meaningful outcomes. Instead of "get better at coding," goals such as "develop my frontend skills so that I can take on new tasks at work," or "learn enough python to pursue a project." 
+Ask the learner to name a specific skill or area they want to grow in. Encourage specific goals that connect to their real lives and meaningful outcomes. Instead of "get better at coding," goals such as "develop my frontend skills so that I can take on new tasks at work," or "learn enough python to pursue a project."
 
 If the goal is vague, help them narrow it by asking:
 - What would it look like to have this skill?
 - What could you do that you can't do now?
 - Is there a specific project or situation where this matters?
 
-Do not rewrite their goal for them. Help them sharpen it in their own words. 
+Do not rewrite their goal for them. Help them sharpen it in their own words.
 
-### Step 2: Strengthen the Goal by defining the SMART goal version 
+### Step 2: Strengthen the Goal by defining the SMART goal version
 
-Once the learner has stated their goal, guide them through reflecting on and refining it. Once the learner has stated their goal, introduce the SMART framework (Specific, Measurable, Achievable, Relevant, Time-bound) as a lens for strengthening it. 
+Once the learner has stated their goal, guide them through reflecting on and refining it. Once the learner has stated their goal, introduce the SMART framework (Specific, Measurable, Achievable, Relevant, Time-bound) as a lens for strengthening it.
 
 Guide the learner in strengthening their goal using the SMART framework. Reference [PRINCIPLES.md](https://github.com/DrCatHicks/learning-goal/blob/main/learning-goal/skills/learning-goal/resources/PRINCIPLES.md) for detailed probing questions on each dimension. Focus on the dimensions the learner's goal is weakest on; skip what's already clear.
 
@@ -88,7 +96,7 @@ After working through these dimensions, offer the user the opportunity to restat
 
 ### Step 3: Visualize the Outcome
 
-Ask the learner to briefly describe why this goal matters to them and what it would feel like to achieve it. 
+Ask the learner to briefly describe why this goal matters to them and what it would feel like to achieve it.
 
 Prompt with:
 - Why do I want to achieve this learning goal?
@@ -109,9 +117,9 @@ Ask them to be concrete and truly imagine a real situation:
 
 Help them identify 1–3 obstacles. Quality matters more than quantity. If they give a surface-level answer like "not enough time," gently push: "When you imagine sitting down to work on this, what actually pulls you away? What's the feeling or thought that comes up?" A better answer looks like: "My plan is to study python for an hour every friday, but sometimes I feel so tired from the week I give up on my hour of learning."
 
-Do not suggest obstacles. The learner must generate their own. This is more important than just a facilitation preference: the research shows that self-generated obstacles activate stronger mental associations between the cue and the planned response, and it is important for users to describe their own real-life obstacles. Suggested obstacles bypass this mechanism and reduce effectiveness. 
-- After asking the learner to identify obstacles, stop. 
-- Do not offer examples of common obstacles, hypothetical scenarios, or "things other learners have experienced." 
+Do not suggest obstacles. The learner must generate their own. This is more important than just a facilitation preference: the research shows that self-generated obstacles activate stronger mental associations between the cue and the planned response, and it is important for users to describe their own real-life obstacles. Suggested obstacles bypass this mechanism and reduce effectiveness.
+- After asking the learner to identify obstacles, stop.
+- Do not offer examples of common obstacles, hypothetical scenarios, or "things other learners have experienced."
 - Wait for their response.
 
 ### Step 5: Build If-Then Plans
@@ -164,7 +172,7 @@ At the end of the exercise, create a brief markdown file (e.g., learning-goal.md
 [What they committed to in Step 5]
 ```
 
-Offer this as something they can keep, revisit, or pin somewhere visible. 
+Offer this as something they can keep, revisit, or pin somewhere visible.
 
 ## Tone and Approach
 
@@ -182,4 +190,4 @@ This exercise is written for developer learning goals but the structure can be b
 
 ## References
 
-This exercise is based on Mental Contrasting with Implementation Intentions (MCII), a self-regulation strategy developed by Oettingen and Gollwitzer, and adapted and successfully tested as an intervention by [Cat Hicks](https://www.drcathicks.com/) and [John Flournoy](http://johnflournoy.science/) in our work with software teams and across hundreds of people learning technical skills in their real workplaces. The combination of visualizing desired outcomes, confronting realistic obstacles, and forming concrete if-then plans has been shown to improve goal commitment and follow-through across educational, health, and professional domains. For full references, see Principles.md 
+This exercise is based on Mental Contrasting with Implementation Intentions (MCII), a self-regulation strategy developed by Oettingen and Gollwitzer, and adapted and successfully tested as an intervention by [Cat Hicks](https://www.drcathicks.com/) and [John Flournoy](http://johnflournoy.science/) in our work with software teams and across hundreds of people learning technical skills in their real workplaces. The combination of visualizing desired outcomes, confronting realistic obstacles, and forming concrete if-then plans has been shown to improve goal commitment and follow-through across educational, health, and professional domains. For full references, see Principles.md
