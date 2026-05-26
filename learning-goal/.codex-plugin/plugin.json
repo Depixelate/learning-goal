@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "A structured goal-setting exercise grounded in MCII research to help developers set concrete learning goals with if-then plans for follow-through.",
   "author": {
-    "name": "Dr. Cat Hicks",
-    "email": "dr.cat.hicks@gmail.com",
-    "url": "https://drcathicks.com"
+    "name": "Sukessh Velusamy",
+    "email": "sukesshvelusamy@gmail.com"
   },
-  "homepage": "https://github.com/DrCatHicks/learning-goal",
-  "repository": "https://github.com/DrCatHicks/learning-goal",
+  "homepage": "https://github.com/Depixelate/learning-goal",
+  "repository": "https://github.com/Depixelate/learning-goal",
   "license": "CC-BY-4.0",
   "keywords": ["learning", "education", "goals", "MCII", "skill-development"],
   "skills": "./skills/",
@@ -16,10 +15,10 @@
     "displayName": "Learning Goal",
     "shortDescription": "Structured learning goal setting with MCII",
     "longDescription": "Guides learners through a 10-15 minute Mental Contrasting with Implementation Intentions exercise to set a concrete learning goal, identify meaningful outcomes and obstacles, and create if-then plans for follow-through.",
-    "developerName": "Dr. Cat Hicks",
+    "developerName": "Sukessh Velusamy",
     "category": "Education",
     "capabilities": ["Interactive", "Write"],
-    "websiteURL": "https://github.com/DrCatHicks/learning-goal",
+    "websiteURL": "https://github.com/Depixelate/learning-goal",
     "defaultPrompt": [
       "Help me set a learning goal",
       "Run the learning goal exercise"

@@ -3,3 +3,5 @@
 .Rhistory
 .RData
 .Rproj.user/
+.codex-tools/*
+!.codex-tools/INSTALLS.md

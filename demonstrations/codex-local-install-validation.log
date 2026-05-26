@@ -1,0 +1,15 @@
+Tue May 26 17:57:13 UTC 2026
+== codex version ==
+codex-cli 0.128.0
+== metadata validation ==
+== plugin schema validation ==
+Plugin validation passed: /Users/velusamykaruppagounder/Documents/Learning Goal/learning-goal
+== codex marketplace registration ==
+Marketplace `learning-goal` is already added from /Users/velusamykaruppagounder/Documents/Learning Goal.
+Installed marketplace root: /Users/velusamykaruppagounder/Documents/Learning Goal
+== active codex config entry ==
+265:source_type = "local"
+270:source_type = "local"
+279:[marketplaces.learning-goal]
+281:source_type = "local"
+282:source = "/Users/velusamykaruppagounder/Documents/Learning Goal"

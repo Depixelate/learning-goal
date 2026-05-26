@@ -1,146 +1,75 @@
-# Learning Goal: A Claude Code and Codex Skill for Structured Goal Setting with Mental Contrasting
+# Personal Learning Goal Codex Plugin
 
-This skill guides you through semi-structured, interactive goal-setting using the technique of Mental Contrasting with Implementation Intentions (MCII), an evidence-based psychological exercise that draws on a self-regulation strategy to improve learning motivation and follow-through, decrease stress, and increase engagement and persistence. The exercise takes about 10-15 minutes and produces a concrete learning goal card you can keep, revisit, and reference in your agentic coding projects.
+This is a personal Codex plugin repo for a structured learning-goal exercise. It packages the `learning-goal` skill as a local Codex marketplace so I can use it directly in Codex without maintaining it as an upstream PR.
 
-Pairs well with [Learning-Opportunities](https://github.com/DrCatHicks/learning-opportunities), a skill that uses an adaptive "dynamic textbook" approach to help you integrate science-based expertise building exercises while doing agentic coding.
+The skill guides a learner through a 10-15 minute Mental Contrasting with Implementation Intentions (MCII) exercise: set a concrete learning goal, connect it to a meaningful outcome, identify realistic obstacles, and create if-then plans for follow-through.
+
+It may be useful for developers who want a deliberate pause at project kickoff or before a new learning-heavy phase of work, especially when using AI coding tools and wanting to keep learning goals explicit.
 
 ## Project Name
 
-Learning Goal.
+Personal Learning Goal Codex Plugin.
 
 ## Prerequisites
 
-- Codex, Claude Code, or another agentic coding tool that can load compatible skills
-- Git, if installing from the GitHub marketplace URL
+- Codex
+- Node.js, for the local metadata validation script
+- Git, if you want to version or publish the personal plugin repo
 
 ## Installation
 
-### Codex
+Install or refresh this local marketplace in Codex:
 
-This repository is also a Codex plugin marketplace. To add it from GitHub:
-
-```
-codex plugin marketplace add https://github.com/DrCatHicks/learning-goal.git
+```bash
+codex plugin marketplace add "/Users/velusamykaruppagounder/Documents/Learning Goal"
 ```
 
-For local development from a checkout:
+This marketplace exposes one plugin:
 
-```
-codex plugin marketplace add /path/to/learning-goal
-```
+- `learning-goal` - the structured MCII learning-goal skill
 
-The Codex marketplace includes:
+In the current Codex CLI, adding the local marketplace registers the plugin source. The marketplace entry marks `learning-goal` as `INSTALLED_BY_DEFAULT` for this personal marketplace.
 
-- `learning-goal` — the structured goal-setting skill
+## Build And Test
 
-### Claude Code
+There is no build step for this skill-only plugin.
 
-This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugins). To install:
+Validate the Codex marketplace and plugin metadata:
 
-1. Add the marketplace:
-   ```
-   /plugin marketplace add https://github.com/DrCatHicks/learning-goal.git
-   ```
-
-2. Install the plugin:
-   ```
-   /plugin install learning-goal@learning-goal
-   ```
-
-3. Restart Claude Code to activate
-
-For more on Claude Code plugins, see the [plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
-
-## Build and Test
-
-There is no build step for this skill-only plugin. To validate the Codex plugin metadata locally, run:
-
-```
+```bash
 node tests/validate-codex-plugin.mjs
+```
+
+Check for whitespace problems in tracked files:
+
+```bash
+git diff --check
 ```
 
 ## Usage
 
-After installing the plugin, ask your agent to help set a learning goal, for example:
+After installing the marketplace, ask Codex to run the skill:
 
-```
+```text
 Help me set a learning goal for this project.
 ```
 
-The skill guides you through the goal-setting exercise one step at a time and can produce a markdown learning goal card at the end.
-
-## Why You Might Want to Experiment with This Skill
-
-Across my research and qualitative interviews with people doing technical work, one of the top concerns I've heard from practitioners is that using AI will stifle their ability to learn and decrease the amount of active learning that happens in their workplaces. This Skill helps you build back a protective habit into your day: developing a concrete learning goal with a plan to recommit to it when encountering obstacles.
-
-Most people believe that their personal learning goals will be obvious and easily remembered. But in practice, people often fail to achieve learning goals not for lack of desire to achieve them, but because the goals themselves are underspecified. Because of this, when we encounter real obstacles in our lives, we often lack concrete plans that cue us how to work toward our goals when things get hard. This pattern can undermine learning progress and sap our motivation.
-
-Closing the gap between wanting to learn something and actually following through on learning can be made more likely by using brief interventions developed by empirical psychology to help you build better "virtuous cycle" habits. This Learning Goal Skill creates an interactive scaffold for you to work through one such intervention, the MCII. Your coding agent will walk you through a short interactive coached exercise that encourages specific goals about what you want to learn, visualizing how the goal connects to meaningful change in your life, surfacing a few of the real obstacles that are most likely to get in your way, and building concrete and actionable if-then plans that help you turn obstacles into action triggers.
-
-## How It Works
-
-Your coding agent offers this exercise when you make an explicit learning goal request ("I want to get better at X," "help me set a learning goal," "how should I approach learning this?") or when you're starting a new project and describing what you want to build. It will not offer this mid-task or if you've already declined this session.
-
-The exercise is conversational and interactive, and intended to force you to do the thinking. This design is aligned with research that shows self-generated goals and obstacles create stronger mental associations than ones suggested to you.
-
-### The Exercise
-
-The exercise moves through these key steps:
-
-1. **Set a learning goal.** Name a specific skill or area you want to grow in. Your coding agent should help you sharpen vague goals into concrete ones without rewriting them for you.
-
-2. **Strengthen the goal.** Using the SMART framework as a guiding lens, your coding agent probes the 1-2 dimensions where your goal is weakest. If your goal is already well-formed, this step is brief.
-
-3. **Visualize the outcome.** Briefly describe why this goal matters to you and what changes when you achieve it. Mental contrasting requires pairing a desired future with present reality, and this step establishes the desired future.
-
-4. **Identify obstacles.** Describe real, concrete situations where you'd realistically face obstacles to pursuing your goal. Your coding agent should not suggest obstacles for you. Specific, real and self-generated obstacles activate stronger cue-response associations, which is the mechanism that makes the intervention effective.
-
-5. **Build if-then plans.** For each obstacle, your coding agent prompts you to draft a specific if-then plan: "If [obstacle/situation], then I will [specific action]."
-
-6. **Reaffirm or adjust.** After confronting a few likely obstacles, adjust your goal if needed or affirm if it still feels right.
-
-7. **Produce a learning goal card.** Your coding agent creates a markdown file summarizing your learning goal, why it matters, your if-then plans, and your first step. This is something you can pin to your project, revisit, or share.
-
-## Pairing with Learning Opportunities
-
-This skill is designed to be independent but pairs naturally with [Learning Opportunities](https://github.com/DrCatHicks/learning-opportunities), a separate Claude Code and Codex skill for integrating deliberate practice exercises into agentic coding workflows. You could:
-
-- Generate multiple learning goal cards and create a learning goal library, which you use to inform goal-relevant learning opportunities your coding agent offers during your coding sessions
-- Create a new learning goal at the beginning of every week, and assess whether they change over a longer period of time
-- Swap cool learning goal cards with your friends like pokemon (no not really but wouldn't that be cute)
-
-You can think about these two skills as serving different but mutually-supportive functions in your learning strategy. Learning goals help you commit to *what* you're trying to learn and build a motivational plan to persist. Learning opportunities help you practice *how* to learn by embedding retrieval, generation, and reflection exercises into your project work.
-
-## The Science Behind It
-
-This exercise is based on Mental Contrasting with Implementation Intentions (MCII), a self-regulation strategy developed by Oettingen and Gollwitzer. The core insight is that positive visualization alone (such as simply imagining how great it will be to learn something) can actually reduce our goal pursuit by making us feel like we've achieved our motivational needs without genuinely producing action. The exercise has two key components, and a combination is more effective than either technique alone.
-
-1) Mental contrasting helps us correct this by pairing the desired future with an honest assessment of our likely obstacles, fostering a stronger commitment particularly when our goal is well-specified and seems feasible.
-
-2) Implementation intentions (which are set by if-then plans) help us strengthen the link between a situational cue and our previously planned response. Instead of relying on in-the-moment willpower, if-then plans create cue-response associations that help us operate efficiently even when cognitive resources are depleted and alternatives are tempting.
-
-See PRINCIPLES.md for more details and references you might want to draw on to refine this Skill.
+The skill should guide the conversation one step at a time and can produce a markdown learning goal card at the end.
 
 ## Customization
 
-You can consider customizing this Skill to your own learning needs.
-You might want to:
+Useful personal adjustments:
 
-- Cue your coding agent with your level of expertise and experience to get more personalized feedback
-- Weight specific parts of the exercise toward spending more time with what you personally struggle with. For instance, if you feel well practiced in setting clear initial SMART goals, you could customize this Skill to spend more time developing if-then plans
-- Save your learning goal card to your project root and reference it in your CLAUDE.md so Claude has your learning goal in context during coding sessions within specific projects
-- Pair it with the Learning Opportunities skill so your coding agent can connect practice exercises to your stated goals.
-- Set up a recurring check-in by revisiting your goal card periodically ("read my goal card and help me reflect on progress")
-- Adapt it to non-technical learning goals — the psychological mechanism is domain-general and has been tested for benefits in writing, design, leadership, communication, or other skill development contexts, even stress reduction goals
-- Share learning goals across a team to help each other identify opportunities to exercise new skills
+- Add your current learning priorities to the prompt when invoking the skill.
+- Pair this with `learning-opportunities` so later practice exercises can connect back to your stated goal.
+- Save generated goal cards in project repos when they should stay attached to a specific codebase.
+- Tune the skill instructions if you want shorter, stricter, or more reflective goal-setting sessions.
 
 ## Background
 
-This skill was developed and adapted by [Cat Hicks](https://www.drcathicks.com/) from an initial MCII intervention adaptation by [John Flournoy](http://johnflournoy.science/), and was informed by our work with software teams. We have tested a version of the MCII exercise across hundreds of people learning technical skills in their real workplaces, and found that it measurably increased learners' behavioral plans to learn.
+This personal plugin is adapted from Dr. Cat Hicks's Learning Goal skill. The underlying exercise is based on Mental Contrasting with Implementation Intentions, a self-regulation strategy developed by Oettingen and Gollwitzer and adapted for technical learning contexts by Dr. Cat Hicks and Dr. John Flournoy.
 
-In further [research with thousands of developers](https://osf.io/preprints/psyarxiv/2gej5_v2), we've found that a strong value and commitment to learning is associated with developers feeling less threat, worry, and anxiety when imagining needing to adjust to agentic coding. Learning culture also predicts increases in team effectiveness overall, not just individual productivity. Practicing learning goal setting can encourage committing to a learning culture, and can help individual developers see tangible progress in their learning journeys. Sharing learning goals on a team level can increase teams' commitment to meeting their developers' learning needs. For more about metacognition and learning during AI, [see Cat's piece here](https://www.fightforthehuman.com/cognitive-helmets-for-the-ai-bicycle-part-1/).
-
-I'd love to know if you find this useful and what you learn! Sharing open science resources helps researchers like me create more things to help software teams. I always appreciate a shout-out or a share, which helps more people learn about the psychology of software teams. Get updates and more at Cat's newsletter: [Fight for the Human](https://www.fightforthehuman.com/)
+For more scientific context and references, see `learning-goal/skills/learning-goal/resources/PRINCIPLES.md`.
 
 ## Contact
 
@@ -148,54 +77,13 @@ To get in touch, email me at `sukesshvelusamy@gmail.com`.
 
 ## Acknowledgments
 
-This project builds on open science work by Dr. Cat Hicks and Dr. John Flournoy, the Creative Commons Attribution 4.0 International License, Claude Code plugin conventions, and Codex plugin marketplace conventions used by the Learning Opportunities project.
+This project builds on:
 
-## Authors
-
-**Dr. Cat Hicks**
-Psychological scientist studying software teams and technology work, author, public speaker, research architect, and empirical interventionist.
-
-- Website: [drcathicks.com](https://drcathicks.com)
-- Consulting: [catharsisinsight.com](https://www.catharsisinsight.com/)
-- Upcoming Book: *Psychology of Software Teams* (May 2026)
-
-**Dr. John Flournoy**
-Research scientist with a focus on statistical methodology, psychometrics, and research computing infrastructure.
-
-Website: [johnflournoy.science](https://johnflournoy.science/)
-
-## Sources
-
-Duckworth, A. L., Grant, H., Loew, B., Oettingen, G., & Gollwitzer, P. M. (2011). Self‐regulation strategies improve self‐discipline in adolescents: Benefits of mental contrasting and implementation intentions. Educational Psychology, 31(1), 17-26.
-
-Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493.
-
-Gollwitzer, P. M. (2014). Weakness of the will: Is a quick fix possible? Motivation and Emotion, 38(3), 305-322.
-
-Harkin, B., Webb, T. L., Chang, B. P., Prestwich, A., Conner, M., Kellar, I., ... & Sheeran, P. (2016). Does monitoring goal progress promote goal attainment? A meta-analysis of the experimental evidence. Psychological bulletin, 142(2), 198.
-
-Hicks, C. M., Lee, C. S., & Foster-Marks, K. (2025). The New Developer: AI Skill Threat, Identity Change & Developer Thriving in the Transition to AI-Assisted Software Development. https://doi.org/10.31234/osf.io/2gej5_v2
-
-Inzlicht, M., Werner, K. M., Briskin, J. L., & Roberts, B. W. (2021). Integrating models of self-regulation. Annual review of psychology, 72(1), 319-345.
-
-Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation: A 35-year odyssey. American psychologist, 57(9), 705.
-
-McEwan, D., Harden, S. M., Zumbo, B. D., Sylvester, B. D., Kaulius, M., Ruissen, G. R., ... & Beauchamp, M. R. (2016). The effectiveness of multi-component goal setting interventions for changing physical activity behaviour: a systematic review and meta-analysis. Health psychology review, 10(1), 67-88.
-
-Oettingen, G. (2012). Future thought and behaviour change. European Review of Social Psychology, 23(1), 1-63.
-
-Oettingen, G., & Gollwitzer, P. M. (2010). Strategies of setting and implementing goals: Mental contrasting and implementation intentions.
-
-Pennycook, G., Costello, T. H., & Rand, D. G. (2026). Using Artificial Intelligence to Better Understand Human Intelligence. Current Directions in Psychological Science, 09637214261417960.
-
-Pietsch, S., Riddell, H., Semmler, C., Ntoumanis, N., & Gucciardi, D. F. (2024). SMART goals are no more effective for creative performance than do-your-best goals or non-specific, exploratory 'open goals.' Educational Psychology, 44, 946-962.
-
-Toli, A., Webb, T. L., & Hardy, G. E. (2016). Does forming implementation intentions help people with mental health problems to achieve goals? A meta‐analysis of experimental studies with clinical and analogue samples. British Journal of Clinical Psychology, 55(1), 69-90.
-
-Wang, G., Wang, Y., & Gai, X. (2021). A meta-analysis of the effects of mental contrasting with implementation intentions on goal attainment. Frontiers in Psychology, 12, 565202.
+- Dr. Cat Hicks's Learning Goal skill and learning-science writing
+- Dr. John Flournoy's MCII intervention adaptation work
+- Codex plugin marketplace conventions
+- Creative Commons Attribution 4.0 International licensing
 
 ## License
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+This work is licensed under a Creative Commons Attribution 4.0 International License.
